@@ -19,6 +19,10 @@ export default Ember.Component.extend({
       format: this.get('format') || 'DD.MM.YYYY'
     };
 
+    if (this.get('minDate')) {
+      options.minDate = this.get('minDate')
+    }
+
     if (this.get('i18n')) {
       options.i18n = this.get('i18n');
     }
