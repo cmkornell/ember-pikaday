@@ -24,7 +24,7 @@ export default Ember.Component.extend({
     }
 
     if (this.get('maxDate')) {
-      options.minDate = this.get('minDate');
+      options.minDate = this.get('maxDate');
     }
 
     if (this.get('i18n')) {
