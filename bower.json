@@ -15,7 +15,7 @@
     "qunit": "~1.15.0"
   },
   "devDependencies": {
-    "pikaday": "~1.2.0",
+    "pikaday": "cmkornell/Pikaday/blob/master/pikaday.js",
     "moment": "~2.8.3"
   }
 }
