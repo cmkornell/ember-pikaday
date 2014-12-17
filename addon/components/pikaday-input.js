@@ -24,7 +24,7 @@ export default Ember.Component.extend({
     }
 
     if (this.get('maxDate')) {
-      options.minDate = this.get('maxDate');
+      options.maxDate = this.get('maxDate');
     }
 
     if (this.get('i18n')) {
@@ -50,10 +50,10 @@ export default Ember.Component.extend({
   }.observes('value'),
 
   setMinDate: function() {
-    this.get('pikaday').setMinDate(this.get('minDate'));
+    this.get('pikaday').setMinDate(new Date(this.get('minDate')));
   }.observes('minDate'),
 
   setMaxDate: function() {
-    this.get('pikaday').setMaxDate(this.get('maxDate'));
+    this.get('pikaday').setMaxDate(new Date(this.get('maxDate')));
   }.observes('maxDate')
 });
